@@ -13,15 +13,151 @@
 			color: #372c66; 
 			font-size: 19px;
 		}
+
+		.contenedor{
+			font-family: 'Gemunu Libre', sans-serif;
+			width: 90%;
+			margin: 50px auto;
+			display: flex;
+
+		}
+
+		.contenedor > h1{
+			margin: 0;
+			padding: 20px;
+			width: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(180deg, #fa0ffa ,purple);
+			border-radius: 0 40px 40px 0;
+			color: #fff;
+		}
+
+		.contenedor > form{
+			background-color: #eee;
+			padding: 20px;
+		}
+
+		form{
+			width: 60%;
+			border-radius: 40px 0 0 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		fieldset{
+			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		fieldset > input[type=radio]{
+			margin: 0 20px 0 10px;
+			width: 15px;
+			height: 15px;
+		}
+
+		fieldset > input[type=text]{
+			width: 60%;
+			height: 35px;
+			font-size: 17px;
+			padding-left: 20px;
+			margin-bottom: 15px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+	
+		}
+
+		.datosPersonales{
+			flex-wrap: wrap;
+		}
+
+		legend{
+			width: 100%;
+			text-align: center;
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+
+		.datosPersonales > label{
+			width: 20%;
+		}
+
+		.datosPersonales > input{
+			width: 60%;
+			height: 35px;
+			font-size: 17px;
+			padding-left: 20px;
+			margin-bottom: 15px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+		}
+
+		.tipoDeDocumento > input[type=number]{
+			width: 200px;
+			height: 35px;
+			font-size: 17px;
+			padding-left: 20px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+		}
+
+		hr{
+			background-color: black;
+			height: 1px;
+			width: 80%;
+			margin: 5px 0;
+		}
+
+		input[type=submit]{
+			margin-top: 20px;
+			width: 200px;
+			height: 50px;
+			border-radius: 10px;
+			border: none;
+			background: linear-gradient(90deg, #fa0ffa ,purple);
+			color: #fff;
+			font-size: 20px;
+		}
+
+		input[type=submit]:hover{
+			background: linear-gradient(270deg, #fa0ffa ,purple);
+
+		}
+		input[type=date]{
+			width: 200px;
+			height: 35px;
+			font-size: 17px;
+			padding-left: 20px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+		}
+
+		input[type=checkbox] {
+			font-size: 17px;
+			padding-left: 20px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+}
+
+
 	</style>
 </head>
-<table>
-	<tr>	
-		<th><img height="131px" src="logo.jpg"> </th>
-		<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 50px; padding-left: 97px;">INSTITUCIÓN UNIVERSITARIA DE COLOMBIA</th>
-	</tr>	
-</table>
-<body>
+<body> 
+	<table>
+		<tr>	
+			<th><img height="131px" src="logo.jpg"> </th>
+			<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 50px; padding-left: 97px;">INSTITUCIÓN UNIVERSITARIA DE COLOMBIA</th>
+		</tr>	
+	</table>
 	<table width="100%" style="background: #f9a67f">
 		<tr>
 		<th><a href="INICIO.HTML">INICIO</a></th>
@@ -30,4 +166,76 @@
 		<th><a href="CONTACTO.HTML">CONTACTO</a></th>
 		</tr>
 	</table>
-	<h1>PROGRAMAS.</h1>
+	<div class="contenedor">
+		<form>
+			<fieldset class="datosPersonales">
+				<legend>Datos personales</legend>
+				<input type="text" name="Pnombre" placeholder="Primer Nombre" required>
+				<input type="text" name="Snombre" placeholder="Segundo nombre">
+				<input type="text" name="Papellido" placeholder="Primer apellido" required>
+				<input type="text" name="Sapellido" placeholder="Segundo apellido">
+			</fieldset>
+			<hr>
+			<fieldset class="tipoDeDocumento">
+				<legend>Tipo de documento</legend>
+				<label>T.I</label><input type="radio"  name="radio">
+				<label>C.C</label><input type="radio"  name="radio">
+				<label>C.E</label><input type="radio" name="radio">
+				<label>Pasaporte</label><input type="radio" name="radio" required>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;
+				<input type="number"  required="yes" min="0000000000" max="9999999999" placeholder="No.Documento">
+			</fieldset>
+			<hr>
+			<fieldset class="genero">
+				<legend>Genero</legend>
+				<label>Femenino</label><input name="genero" type="radio" required>
+				<label>Fasculino</label><input name="genero" type="radio">
+				<label>otro</label><input name="genero" type="radio">
+			</fieldset>
+			<hr>
+			<fieldset>
+				<legend>Programas</legend>
+				<input type="text" list="lista" required>
+				<datalist id="lista" required>
+					<option selected>Selecione una opción...</option>
+					<option>Auxiliar de Enfermería</option>
+					<option>Auxiliar en Clínica Veterinaria</option>
+					<option>Animación Digital 2D y 3D</option>
+					<option>Operaciones de Software y Redes de Cómputo</option>
+					<option>Comunicación Gráfica y Publicitaria</option>
+					<Option>Diseño de Modas</Option>
+					<Option> Auxiliar Administrativo</Option>
+					<Option>Auxiliar Contable y Financiero</Option>
+					<Option>Auxiliar en Recursos Humanos</Option>
+					<Option>Auxiliar de Cocina Nacional e Internacional</Option>
+					<Option>Carrera técnica de Judicial y Criminalística</Option>
+					<Option>Carrera técnica de Seguridad Ocupacional</Option>
+				</datalist>
+			</fieldset>
+			<hr>
+			<fieldset class="genero">
+				<legend>Estudios realizados</legend>
+				<input type="checkbox" name="checkbox" required> Primaria
+				<input type="checkbox" name="checkbox"> Bachillerato
+				<input type="checkbox" name="checkbox"> Tecnico
+				<input type="checkbox" name="checkbox"> Tecnologo
+				<input type="checkbox" name="checkbox"> Profesional
+				<input type="checkbox" name="checkbox"> Posgrado
+			</fieldset>
+			
+			<hr>
+			<fieldset>
+				<label style="margin-right: 20px;" for="FechaNacimiento">Fecha de nacimiento</label>
+				<input type="date" id="FechaNacimiento" name="FechaNacimiento" required>
+			</fieldset>
+			<fieldset>
+				<textarea rows="4" id="" cols="80">Comentarios</textarea>
+			</fieldset>
+			<input type="submit" value="Enviar">
+		</form>
+		<h1>Formulario ingreso.</h1>
+	</div>
+	<!-- <table width="90%" border="2">
+
+	</table> -->
+</body>

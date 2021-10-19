@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{
+			font-family: 'Gemunu Libre', sans-serif;
+			text-decoration: none;
+			color: #372c66; 
+			font-size: 19px;
+		}
+
+		.contenedor{
+			font-family: 'Gemunu Libre', sans-serif;
+			width: 90%;
+			margin: 50px auto;
+			display: flex;
+			flex-direction: column-reverse;
+
+		}
+
+		.contenedor > h1{
+			margin: 0;
+			padding: 20px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(180deg, #fa0ffa ,purple);
+			border-radius: 40px 40px 0 0;
+			color: #fff;
+		}
+
+		.contenedor > form{
+			background-color: #eee;
+			padding: 20px;
+		}
+
+		form{
+			width: 100%;
+			border-radius: 0 0 40px 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		fieldset{
+			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		fieldset > input[type=radio]{
+			margin: 0 20px 0 10px;
+			width: 15px;
+			height: 15px;
+		}
+
+		.datosPersonales{
+			flex-wrap: wrap;
+		}
+
+		legend{
+			width: 100%;
+			text-align: center;
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+
+		.datosPersonales > label{
+			width: 20%;
+		}
+
+		.datosPersonales > input{
+			width: 60%;
+			height: 35px;
+			font-size: 17px;
+			padding-left: 20px;
+			margin-bottom: 15px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+		}
+
+		.tipoDeDocumento > input[type=number]{
+			width: 200px;
+			height: 35px;
+			font-size: 17px;
+			padding-left: 20px;
+			border-radius: 15px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #fcab4b, 0px -1px 5px 0px #ff3d8b;
+		}
+
+		hr{
+			background-color: black;
+			height: 1px;
+			width: 80%;
+			margin: 5px 0;
+		}
+
+		input[type=submit]{
+			margin-top: 20px;
+			width: 200px;
+			height: 50px;
+			border-radius: 10px;
+			border: none;
+			background: linear-gradient(90deg, #fa0ffa ,purple);
+			color: #fff;
+			font-size: 20px;
+		}
+
+		input[type=submit]:hover{
+			background: linear-gradient(270deg, #fa0ffa ,purple);
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="contenedor">
+		<form>
+			<fieldset class="datosPersonales">
+				<legend>Datos personales</legend>
+				<input type="text" name="Pnombre" placeholder="Primer Nombre" required>
+				<input type="text" name="Snombre" placeholder="Segundo nombre">
+				<input type="text" name="Papellido" placeholder="Primer apellido" required>
+				<input type="text" name="Sapellido" placeholder="Segundo apellido">
+			</fieldset>
+			<hr>
+			<fieldset class="tipoDeDocumento">
+				<legend>Tipo de documento</legend>
+				<label>T.I</label><input type="radio"  name="radio">
+				<label>C.C</label><input type="radio"  name="radio">
+				<label>C.E</label><input type="radio" name="radio">
+				<label>Pasaporte</label><input type="radio" name="radio" required>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;
+				<input type="number"  required="yes" min="0000000000" max="9999999999" placeholder="No.Documento">
+			</fieldset>
+			<hr>
+			<fieldset class="genero">
+				<legend>Genero</legend>
+				<label>Femenino</label><input name="genero" type="radio" required>
+				<label>Fasculino</label><input name="genero" type="radio">
+				<label>otro</label><input name="genero" type="radio">
+			</fieldset>
+			<input type="submit" value="Enviar">
+		</form>
+		<h1>Formulario ingreso.</h1>
+	</div>
+</body>
+</html>

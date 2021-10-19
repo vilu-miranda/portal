@@ -13,12 +13,68 @@
 			color: #372c66; 
 			font-size: 19px;
 		}
+
+		.contenedor{
+			width: 90%;
+			display: flex;
+			margin: auto;
+		}
+
+		.contenedor > div{
+			width: 25%;
+			border: #372c66 solid 1px;
+		}
+		.contenedor > div > img{
+			width: 100%;
+		}
+		h2{
+			text-align: center;
+		}
+		.contenedor > div:nth-child(1){
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.contenedor > div:nth-child(2){
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.contenedor > div:nth-child(2) > p{
+			height: 33%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.contenedor > div:nth-child(3){
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.contenedor > div:nth-child(3) > ul{
+			height: 33%;
+			display: flex;
+			flex-direction: column;
+			border: #3a3a3d solid 1px; 
+
+		}
+		.contenedor > div:nth-child(3) > ul > li{
+			width: 100%;
+		}
+		center{
+			color: #fff;
+			background-color: #009879;
+			box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+		}
+		
 	</style>
 </head>
-<table>
+<table width="100%">
 	<tr>	
 		<th><img height="131px" src="logo.jpg"> </th>
-		<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 50px; padding-left: 97px;">INSTITUCIÓN UNIVERSITARIA DE COLOMBIA</th>
+		<th width="80%" style="font-family: 'Gemunu Libre', sans-serif; font-size: 50px; padding-left: 97px;">INSTITUCIÓN UNIVERSITARIA DE COLOMBIA</th>
 	</tr>	
 </table>
 <body>
@@ -32,23 +88,494 @@
 
 	</table>
 	<br>
-	<table width="90%">
+	<center>
+		<table width="90%">
 		
-		<tr>
-			<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 20px; padding-left: 20px;" scope="row">Programa técnico laboral</th>
-
-			<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 20px; padding-left: 20px;">Semestres</th>
-
-			<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 20px; padding-left: 20px;">Asignatura</th>
-
-			<th style="font-family: 'Gemunu Libre', sans-serif; font-size: 20px; padding-left: 20px;">Imagen</th>
-		</tr>
-		
-		<tr>
-			<th>Auxiliar de enfermería</th>
-
-		</tr>
-
-	</table>	
+			<tr style="font-family: 'Gemunu Libre', sans-serif; font-size: 20px; padding-left: 20px;">
+				<th width="25%" scope="row">Programa técnico laboral</th>
 	
+				<th width="25%">Semestres</th>
+	
+				<th width="25%">Asignatura</th>
+	
+				<th width="25%">Imagen</th>
+			</tr>
+	
+		</table>
+	</center>
+	<br>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Auxiliar de Enfermería</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Atención y Cuidados Básicos en Enfermería</li>
+				<li>Anatomía y Fisiología</li>
+				<li>Atención, Orientación y Admisión al Usuario</li>
+				<li>Atención del Individuo en Situación de Urgencia</li>
+				<li>Laboratorio Clínico y Bioseguridad</li>
+				<li>Administración de Medicamentos e Inmunobiológicos</li>
+			</ul>
+			<ul>
+				<li>Atención de Enfermería en el Área Quirúrgica</li>
+				<li>Patología e Infectología</li>
+				<li>Promoción en Salud y Prevención de la Enfermedad</li>
+				<li>Tecnologías de la Información y las Comunicaciones Tic</li>
+				<li>Cuidado del Adulto Mayor</li>
+				<li>Seguridad y Salud Ocupacional</li>
+			</ul>
+			<ul>
+				<li>Enfermería Materna (Ginecología y Obstetricia)</li>
+				<li>Enfermería Pediátrica</li>
+				<li>Terapia Respiratoria y Física</li>
+				<li>Terapia Alternativas</li>
+				<li>Cuidado de Enfermería al Paciente con Alteraciones Mentales</li>
+				<li>Salud Pública</li>
+				<li>Prácticas</li>
+			</ul>
+		</div>
+		<div>
+			<img src="Enfermeria.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Auxiliar en Clínica Veterinaria y Cuidado de Mascotas</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Introducción a la Veterinaria y Cuidado de Mascotas</li>
+				<li>Anatomía y Fisiología Animal</li>
+				<li>Sanidad Veterinaria</li>
+				<li>Bienestar Animal y Etología</li>
+				<li>Clínica I</li>
+				<li>Primeros Auxilios Veterinarios y Toxicología</li>
+			</ul>
+			<ul>
+				<li>Patología General, Parasitología e Inmunología Veterinaria</li>
+				<li>Farmacología</li>
+				<li>Estética y Peluquería Canina y Felina</li>
+				<li>Reproducción Animal</li>
+				<li>Clínica II</li>
+				<li>Producción y Nutrición Animal</li>
+			</ul>
+			<ul>
+				<li>Administración Veterinaria</li>
+				<li>Venta de Productos y Servicios de Veterinaria</li>
+				<li>Cuidado de Animales de Compañía</li>
+				<li>Servicio de Paseo de Caninos</li>
+				<li>Práctica Clínica</li>
+				<li>Creación y Desarrollo de Empresas</li>
+			</ul>
+		</div>
+		<div>
+			<img src="veterinaria.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Animación Digital 2D y 3D</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Introducción al Lenguaje Audiovisual</li>
+				<li>Dibujo Artístico y Bocetación</li>
+				<li>Graficadores I: Illustrator</li>
+				<li>Taller de Narración Gráfica</li>
+				<li>Narrativa del Lenguaje Audiovisual (Guiones y Libretos)</li>
+				<li>Storyboard, Técnicas y Recursos</li>
+			</ul>
+			<ul>
+				<li>Graficadores II: Photoshop</li>
+				<li>Historia y Técnicas Tradicionales de -Animación (Stopmotion y Rotoscopia)</li>
+				<li>Fotografía Digital</li>
+				<li>Taller de Animación Digital 2D</li>
+				<li>Edición de Vídeo</li>
+				<li>Modelado 3D</li>
+			</ul>
+			<ul>
+				<li>Diseño de Sonido</li>
+				<li>Motion Graphics</li>
+				<li>Creación y Preparación de Personajes para 3D</li>
+				<li>Animación Digital 3D</li>
+				<li>Desarrollo de Proyectos de Animación</li>
+				<li>Taller de Innovación y Creatividad</li>
+			</ul>
+		</div>
+		<div>
+			<img src="2d-3d.png" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Operaciones de Software y Redes de Cómputo</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Algoritmos y Fundamentos de Programación (Java)</li>
+				<li>Computación Gráfica y Multimedia</li>
+				<li>Estructura de Datos I (Java)</li>
+				<li>Empresas Online y Programación Web (PHP)</li>
+				<li>Programación Orientada a Objetos (.NET)</li>
+				<li>Arquitectura y Mantenimiento de Equipos de Cómputo</li>
+			</ul>
+			<ul>
+				<li>Estructura de Datos II (Java Web)</li>
+				<li>Sistemas Operativos</li>
+				<li>Redes y Cableado Estructurado (Instalación y Administración)</li>
+				<li>Sistemas de Información</li>
+				<li>Telecomunicaciones e Internet de las Cosas</li>
+				<li>Modelamiento de Bases de Datos (Oracle)</li>
+				</ul>
+			<ul>
+				<li>Inteligencia Artificial</li>
+				<li>Teleinformática</li>
+				<li>Ingeniería de Software y Big Data</li>
+				<li>Desarrollo de Software para Equipos Móviles</li>
+				<li>Seguridad Informática en Software y Redes</li>
+				<li>Lenguajes de Última Generación</li>
+			</ul>
+		</div>
+		<div>
+			<img src="software.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Auxiliar en Comunicación Gráfica y Publicitaria</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Fundamentos de Comunicación Gráfica Publicitaria</li>
+				<li>Dibujo artístico y Bocetación</li>
+				<li>Graficadores I: Illustrator</li>
+				<li>Semiótica y Comunicación</li>
+				<li>Teoría del Color y Composición</li>
+				<li>Taller de Diseño Tipográfico</li>
+			</ul>
+			<ul>
+				<li>Graficadores II:Photoshop</li>
+				<li>Taller de Diseño Gráfico y Diagramación</li>
+				<li>Fotografía Digital</li>
+				<li>Fundamentos de Marketing e Imagen Publicitaria</li>
+				<li>Empresas Online y Diseño Web</li>
+				<li>Campañas Publicitarias</li>
+			</ul>
+			<ul>
+				<li>Multimedios</li>
+				<li>Diseño Editorial: Indesing</li>
+				<li>Señalética</li>
+				<li>Diseño de Empaques y Piezas Promocionales</li>
+				<li>Campañas Publicitarias II</li>
+				<li>Taller de Innovación y Creatividad</li>
+			</ul>
+		</div>
+		<div>
+			<img src="comunicacion.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Diseño de Modas</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Historia del Arte y la Moda</li>
+				<li>Color y Moda</li>
+				<li>Expresión de la Figura Humana</li>
+				<li>Materiales y Tecnología Textil</li>
+				<li>Diseño Vestuario Femenino Formal</li>
+				<li>Patronaje Vestuario Femenino Formal</li>
+			</ul>
+			<ul>
+				<li>Ilustración de Moda</li>
+				<li>Colección de Moda</li>
+				<li>Diseño Vestuario Masculino Formal</li>
+				<li>Patronaje Vestuario Masculino Formal</li>
+				<li>Diseño Vestuario Casual</li>
+				<li>Taller de Confección I</li>
+			</ul>
+			<ul>
+				<li>Diseño Vestuario Infantil</li>
+				<li>Patronaje Vestuario Infantil</li>
+				<li>Costos y Presupuestos</li>
+				<li>Diseño y Patronaje Asistido por Computador</li>
+				<li>Taller de Confección II</li>
+				<li>Control de la Calidad</li>
+			</ul>
+		</div>
+		<div>
+			<img src="modas.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;"> Auxiliar Administrativo</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Fundamentos de Contabilidad y Finanzas</li>
+				<li>Taller de Software Contable y Financiero</li>
+				<li>Fundamentos de Administración</li>
+				<li>Nómina y Prestaciones Sociales</li>
+				<li>Tecnologías de la Información y las Comunicaciones TIC</li>
+				<li>Comunicación oral y Escrita</li>
+			</ul>
+			<ul>
+				<li>Contabilidad General</li>
+				<li>Marketing y Ventas</li>
+				<li>Costos</li>
+				<li>Organización de Archivos y Gestión</li>
+				<li>Documental</li>
+				<li>Legislación Laboral</li>
+				<li>Presupuestos</li>
+			</ul>
+			<ul>
+				<li>Gestión del Talento Humano</li>
+				<li>Seguridad Ocupacional y Salud en el Trabajo</li>
+				<li>Compras, Logística y Distribución</li>
+				<li>Gestión de la Calidad y Servicio al Cliente</li>
+				<li>Análisis Financiero</li>
+				<li>Creación y Desarrollo de Empresas</li>
+			</ul>
+		</div>
+		<div>
+			<img src="administracion.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Auxiliar Contable y Financiero</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Fundamentos de Contabilidad y Finanzas</li>
+				<li>Taller de Software Contable y Financiero I</li>
+				<li>Fundamentos de Administración</li>
+				<li>Nómina y Prestaciones Sociales</li>
+				<li>Tecnologías de la Información y las Comunicaciones TIC</li>
+				<li>Comunicación Oral y Escrita</li>
+			</ul>
+			<ul>
+				<li>Contabilidad I</li>
+				<li>Taller de Software Contable y Financiero II</li>
+				<li>Costos</li>
+				<li>Organización de Archivos y Gestión</li>
+				<li>Documental</li>
+				<li>Legislación Laboral</li>
+				<li>Presupuestos</li>
+			</ul>
+			<ul>
+				<li>Contabilidad II</li>
+				<li>Impuestos</li>
+				<li>Normas Internacionales de Información</li>
+				<li>Financiera NIIF</li>
+				<li>Legislación Tributaria</li>
+				<li>Análisis Financiero</li>
+				<li>Creación y Desarrollo de Empresas</li>
+			</ul>
+		</div>
+		<div>
+			<img src="contabilidad.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Auxiliar en Recursos Humanos</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Gestión del Talento Humano</li>
+				<li>Psicología Organizacional</li>
+				<li>Fundamentos de Administración</li>
+				<li>Nómina y Prestaciones Sociales I</li>
+				<li>Tecnologías de la Información y las Comunicaciones TIC</li>
+				<li>Comunicación oral y Escrita</li>
+			</ul>
+			<ul>
+				<li>Selección de Personal</li>
+				<li>Derecho Laboral Individual</li>
+				<li>Nómina y Prestaciones Sociales II</li>
+				<li>Organización de Archivos y Gestión Documental</li>
+				<li>Seguridad Social</li>
+				<li>Pruebas Psicológicas</li>
+			</ul>
+			<ul>
+				<li>Desarrollo y Capacitación del Talento Humano</li>
+				<li>Seguridad Ocupacional y Salud en el Trabajo</li>
+				<li>Estudio de Salarios</li>
+				<li>Conciliación y Solución Pacífica de Conflictos</li>
+				<li>Derecho Laboral Colectivo</li>
+				<li>Creación y Desarrollo de Empresas</li>
+			</ul>
+		</div>
+		<div>
+			<img src="humanos.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Auxiliar de Cocina Nacional e Internacional</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Fundamentos de Cocina</li>
+				<li>Historia del Arte Culinario</li>
+				<li>Manipulación y Conservación de Alimentos</li>
+				<li>Cocina Colombiana I</li>
+				<li>Enología</li>
+				<li>Cocina Internacional I</li>
+			</ul>
+			<ul>
+				<li>Tecnología de Leche y Derivados Lácteos</li>
+				<li>Repostería y Panadería</li>
+				<li>Tecnología de Cárnicos, Cortes, Salsas y Parrilla</li>
+				<li>Cocina Colombiana II</li>
+				<li>Bar y Bebidas</li>
+				<li>Cocina Internacional II</li>
+			</ul>
+			<ul>
+				<li>Cocina Saludable y Nueva Cocina</li>
+				<li>Gestión de Calidad en la Industria</li>
+				<li>Gastronómica</li>
+				<li>Organización de Eventos y Protocolo</li>
+				<li>Cocina Gourmet</li>
+				<li>Costos, Presupuestos y Administración de Restaurantes</li>
+				<li>Taller de Innovación y Creatividad</li>
+			</ul>
+		</div>
+		<div>
+			<img src="cocina.png" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Carrera técnica de Judicial y Criminalística</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Fundamentos de Investigación Judicial y Criminalística</li>
+				<li>Constitución Política y Derechos Humanos</li>
+				<li>Técnicas de Investigación e Inteligencia</li>
+				<li>Lógica Jurídica</li>
+				<li>Derecho Civil General y Procesal</li>
+				<li>Interpretación y Argumentación Jurídica</li>
+			</ul>
+			<ul>
+				<li>Psicología Forense</li>
+				<li>Derecho Penal</li>
+				<li>Criminalística y Ciencias Forenses</li>
+				<li>Elementos Materiales Probatorios y Evidencias Físicas</li>
+				<li>Medicina Legal</li>
+				<li>Teoría General del Proceso</li>
+			</ul>
+			<ul>
+				<li>Manejo de la Escena y Técnicas Judiciales de Campo</li>
+				<li>Derecho Procesal General</li>
+				<li>Policía Judicial</li>
+				<li>Automotores</li>
+				<li>Práctica Judicial y Criminalística</li>
+				<li>Creación y Desarrollo de Empresas</li>
+			</ul>
+		</div>
+		<div>
+			<img src="judicial.jpg" alt="">
+		</div>
+	</div>
+	<div class="contenedor">
+		<div>
+			<h2 style="font-family: 'Gemunu Libre', sans-serif;">Carrera técnica de Seguridad Ocupacional</h2>
+		</div>
+		<div>
+			<p>I</p>
+			<p>II</p>
+			<p>III</p>
+		</div>
+		<div>
+			<ul>
+				<li>Fundamentos de Seguridad y Salud Ocupacional</li>
+				<li>Saneamiento Básico</li>
+				<li>Marco Legal en Seguridad y Salud Ocupacional</li>
+				<li>Protección y Control de Incendios</li>
+				<li>Primeros Auxilios</li>
+				<li>Tecnologías de la Información y las Comunicaciones TIC</li>
+			</ul>
+			<ul>
+				<li>Matriz de Peligros</li>
+				<li>Planes de Emergencias y Trabajos de Alto Riesgo</li>
+				<li>Estadísticas Aplicadas</li>
+				<li>Riesgos Laborales Físicos y Químicos</li>
+				<li>Enfermedades Laborales y Medicina Preventiva</li>
+				<li>Planes y Brigada de Emergencia</li>
+			</ul>
+			<ul>
+				<li>Gestión del Talento Humano</li>
+				<li>Seguridad Social</li>
+				<li>Gestión Ambiental</li>
+				<li>Prevención y Promoción de la Seguridad y Salud en el Trabajo</li>
+				<li>Higiene Industrial y Ergonomía</li>
+				<li>Diseño de Sistemas de Gestión de Seguridad y Salud en el Trabajo</li>
+			</ul>
+		</div>
+		<div>
+			<img src="seguridad.jpg" alt="">
+		</div>
+	</div>
+</body>
 	 	
